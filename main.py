@@ -11,7 +11,7 @@ CORS(app)
 parser = reqparse.RequestParser()
 parser.add_argument("url")
 
-validate_model = pickle.load(open('./rf_tfidf', 'rb'))
+validate_model = pickle.load(open('./model_customer.pckl', 'rb'))
 
 class ValidationEndPoint(Resource):
     def get(self):
@@ -24,7 +24,7 @@ class ValidationEndPoint(Resource):
         encode_url = encode_sample.Encode.convertURL(url)
         url_features = [encode_url]
         predict_value = validate_model.predict(url_features)
-        print(predict_value[0])
+        print( "Bo may den day : " , predict_value[0])
 
         return {
             "encode_url": encode_url,
