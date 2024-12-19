@@ -10,7 +10,7 @@ column_replacements = {
     'Discount Applied': (['Yes', 'No'], [1, 0]),
     'Promo Code Used': (['Yes', 'No'], [1, 0]),
     'Gender': (['Male', 'Female'], [1, 0]),
-    'Shipping Type': (['Standard', 'Free Shipping', 'Next Day Air', 'Express', '2-Day Shipping', 'Store Pickup'], [1, 2, 3, 4, 5, 6]),
+    # 'Shipping Type': (['Standard', 'Free Shipping', 'Next Day Air', 'Express', '2-Day Shipping', 'Store Pickup'], [1, 2, 3, 4, 5, 6]),
     'Subscription Status': (['Yes', 'No'], [1, 0]),
     'Season': (['Summer', 'Fall', 'Winter', 'Spring'], [1, 2, 3, 4]),
     'Category': (['Clothing', 'Footwear', 'Accessories', 'Outerwear'], [1, 2, 3, 4]),
